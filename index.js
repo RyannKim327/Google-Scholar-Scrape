@@ -10,14 +10,14 @@ module.exports =  async (search) => {
 		let elem = $(e)
 		let title = elem.find("div[class='gs_or_ggsm']").find("a")
 		try{
-			let text_title = title.text()
+			let text_title = elem.find('.gs_rt').text()
 			let link_title = title.attr()['href']
 			let citations = elem.find("a[class='gs_or_cit gs_or_btn gs_nph']").next("a")	
 			result.push({
-				title: `${i + 1}. ${text_title}`,
+				title: `${text_title}`,
 				link: link_title,
 				citation: {
-					cite: citations.html(),
+					cite: citations.text(),
 					link: `https://scholar.google.com${citations.attr()['href']}`
 				}
 			})
