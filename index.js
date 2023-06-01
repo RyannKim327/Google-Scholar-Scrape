@@ -12,10 +12,14 @@ let url =  async (url) => {
 		try{
 			let text_title = elem.find('.gs_rt').text()
 			let link_title = title.attr()['href']
+			let source = elem.find(".gs_a").text()
+			let shortDescription = elem.find(".gs_rs").text()
 			let citations = elem.find("a[class='gs_or_cit gs_or_btn gs_nph']").next("a")
 			let related_articles = citations.next("a")
 			result.push({
 				title: `${text_title}`,
+				shortDescription: shortDescription,
+				source: source,
 				url: link_title,
 				citation: {
 					cite: citations.text(),
