@@ -11,10 +11,8 @@ let getCitation = async (id) => {
 let url =  async (url) => {
 	let { data } = await axios.get(url)
 	let $ = cheerio.load(data)
-	let capcha = $("#gs_captcha_ccl")
 	let html = $("div[class='gs_r gs_or gs_scl']")
 	let result = []
-	console.log(capcha.html())
 	await html.each(async (i, e) => {
 		let elem = $(e)
 		let title = elem.find("div[class='gs_or_ggsm']").find("a")
@@ -41,9 +39,7 @@ let url =  async (url) => {
 					url:`https://scholar.google.com${related_articles.attr()['href']}`
 				}
 			})
-		}catch(e){
-			console.log(e)
-		}
+		}catch(e){}
 	})
 	return result
 }
