@@ -5,7 +5,14 @@ let getCitation = async (id) => {
 	let { data } = await axios.get(`https://scholar.google.com/scholar?q=info:${id}:scholar.google.com/&output=cite`)
 	let $ = cheerio.load(data)
 	let html = $("#gs_citt")
-	console.log(html.html())
+	let result = {}
+	html.each((i, e) => {
+		let key = $(e).find(".gs_cith")
+		let val = $(e).find(".gs_citr")
+		console.log(key)
+		console.log(val)
+	})
+	console.log(result)
 }
 
 let url =  async (url) => {
