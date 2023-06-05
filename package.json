@@ -1,7 +1,7 @@
 {
   "name": "gscholar",
   "version": "0.0.1",
-  "description": "",
+  "description": "A webscraped version of Google Scholar, for those who want to use a free package/api of it for their test projests",
   "main": "index.js",
   "scripts": {
     "test": "node test"
@@ -18,5 +18,14 @@
   "dependencies": {
     "axios": "^1.4.0",
     "cheerio": "^1.0.0-rc.12"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyannKim327/Google-Scholar-Scrape.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RyannKim327/Google-Scholar-Scrape/issues"
+  },
+  "homepage": "https://github.com/RyannKim327/Google-Scholar-Scrape#readme"
 }
