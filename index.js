@@ -40,6 +40,7 @@ let url =  async (agent, url) => {
 	if(html.html() == null){
 		return {
 			"status": 404,
+			"query": url,
 			"message": "There's a capcha for now, please try again later"
 		}
 	}
@@ -73,6 +74,7 @@ let url =  async (agent, url) => {
 	})
 	return {
 		"status": 200,
+		"query": url,
 		"data": result
 	}
 }
