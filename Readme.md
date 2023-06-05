@@ -15,7 +15,11 @@ let a = async () => {
 }
 a()
 ```
-**Result**
+**Result [Error]**
 ```JSON
-
+{
+  "status": 404,
+  "query": "https://scholar.google.com/scholar?q=computer+management+system",
+  "message": "There's a capcha for now, please try again later"
+}
 ```
