@@ -15,11 +15,10 @@ let getCitation = async (agent, id) => {
 	})
 	let $ = cheerio.load(data)
 	let html = $("#gs_citt")
+	let base = html.find(".gs_cith")
 	let result = {}
-	html.each((i, e) => {
-		let key = $(e).find(".gs_cith")
-		let val = $(e).find(".gs_citr")
-		result[key] = val
+	base.each((i, e) => {
+		result[e.children[0].data] = $(e).next().text()
 	})
 	return result
 }

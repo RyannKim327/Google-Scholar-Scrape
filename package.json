@@ -1,12 +1,18 @@
 {
   "name": "gscholar",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "node test"
   },
-  "keywords": [],
+  "keywords": [
+    "google scholar",
+    "review related literature",
+    "research",
+    "capstone",
+    "google"
+  ],
   "author": "RyannKim327",
   "license": "ISC",
   "dependencies": {
