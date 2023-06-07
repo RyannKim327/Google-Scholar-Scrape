@@ -8,11 +8,7 @@ const ua = async () => {
 }
 
 let getCitation = async (agent, id) => {
-	let { data } = await axios.get(`https://scholar.google.com/scholar?q=info:${id}:scholar.google.com/&output=cite`, {
-		Headers: {
-			'User-Agent': agent
-		}
-	})
+	let { data } = await axios.get(`https://scholar.google.com/scholar?q=info:${id}:scholar.google.com/&output=cite`)
 	let $ = cheerio.load(data)
 	let html = $("#gs_citt")
 	let base = html.find(".gs_cith")
@@ -35,7 +31,6 @@ let url =  async (agent, url) => {
 	})
 	let $ = cheerio.load(data)
 	let html = $("div[class='gs_r gs_or gs_scl']")
-	let result = []
 	if(html.html() == null){
 		return {
 			"status": 404,
@@ -45,7 +40,8 @@ let url =  async (agent, url) => {
 			]
 		}
 	}
-	await html.each(async (i, e) => {
+	let result = await html.each( async (i, e) => {
+		let result = []
 		let elem = $(e)
 		let title = elem.find("div[class='gs_or_ggsm']").find("a")
 		let citations = await getCitation(agent, elem.attr()['data-cid'])
@@ -72,6 +68,7 @@ let url =  async (agent, url) => {
 				}
 			})
 		}catch(e){}
+		return result
 	})
 	return {
 		"status": 200,
