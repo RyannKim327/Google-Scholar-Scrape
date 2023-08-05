@@ -29,6 +29,7 @@ let url =  async (agent, url) => {
 			'User-Agent': agent
 		}
 	})
+	let result = []
 	let $ = cheerio.load(data)
 	let html = $("div[class='gs_r gs_or gs_scl']")
 	if(html.html() == null){
@@ -40,11 +41,10 @@ let url =  async (agent, url) => {
 			]
 		}
 	}
-	let result = await html.each( async (i, e) => {
-		let result = []
+	html.each((i, e) => {
 		let elem = $(e)
 		let title = elem.find("div[class='gs_or_ggsm']").find("a")
-		let citations = await getCitation(agent, elem.attr()['data-cid'])
+		let citations = "" // await getCitation(agent, elem.attr()['data-cid'])
 		result.push(elem.attr()['data-cid'])
 		try{
 			let text_title = elem.find('.gs_rt').text()
@@ -68,7 +68,6 @@ let url =  async (agent, url) => {
 				}
 			})
 		}catch(e){}
-		return result
 	})
 	return {
 		"status": 200,
