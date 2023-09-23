@@ -62,7 +62,7 @@ let url =  async (agent, url) => {
 				shortDescription: shortDescription,
 				source: source,
 				url: link_title,
-				cite: cite_id
+				citeID: cite_id,
 				cites: {
 					cite: cites.text(),
 					url: `https://scholar.google.com${cites.attr()['href']}`
