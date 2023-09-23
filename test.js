@@ -13,7 +13,7 @@ let b = async () => {
 	console.log(c)
 	let d = await a.url('https://scholar.google.com/scholar?q=related:0YuT_-rgrZEJ:scholar.google.com/&scioq=stress+management&hl=en&oe=ASCII&as_sdt=0,5')
 	console.log(d)
-	console.log(d.data[0]. cites)
+	console.log(d.data[4]. cites)
 }
 
 b()
