@@ -43,7 +43,8 @@ let d = await gs.url('https://scholar.google.com/scholar?q=related:0YuT_-rgrZEJ:
 console.log(d)
 ```
 ---
-### Get Citations .getCitation(string agent[optional], string citationID)
+### Get Citations .getCitation(string agent[optional], string citeID)
+> This function is just to get some citations such as MLA, 
 
 ---
 ### License
