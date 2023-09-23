@@ -58,7 +58,6 @@ let url =  async (agent, url) => {
 				shortDescription: shortDescription,
 				source: source,
 				url: link_title,
-				citation: citations,
 				cites: {
 					cite: cites.text(),
 					url: `https://scholar.google.com${cites.attr()['href']}`
@@ -78,11 +77,12 @@ let url =  async (agent, url) => {
 
 let search = async (search) => {
 	let agent = await ua()
-	let data = await url(agent, `https://scholar.google.com/scholar?q=${search.replace(/\s/gi, "+")}`)
+	let data = await url(agent, `https://scholar.google.com/scholar?q=${search.replace(/\s/gi, "+")}`, "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36")
 	return data
 }
 
 module.exports = {
 	search: search,
-	url: url
+	url: url,
+	getCitation
 }
