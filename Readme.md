@@ -17,6 +17,7 @@
 
 **Sample code**
 ```Javascript
+const gs = 
 let a = async () => {
 	let c = await a.search('stress management')
 	console.log(c)
@@ -36,7 +37,7 @@ a()
 > This function sets you to insert a specific url of searched google scholar.
 
 **Sample code**
-```NodeJS
+``` NodeJS
 let d = await a.url('https://scholar.google.com/scholar?q=related:0YuT_-rgrZEJ:scholar.google.com/&scioq=stress+management&hl=en&oe=ASCII&as_sdt=0,5')
 console.log(d)
 ```
