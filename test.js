@@ -11,9 +11,9 @@ const search = [
 let b = async () => {
 	let c = await a.search(search[Math.floor(Math.random() * search.length)])
 	console.log(c)
-	let d = await a.url(c[0].query) // 'https://scholar.google.com/scholar?q=related:0YuT_-rgrZEJ:scholar.google.com/&scioq=stress+management&hl=en&oe=ASCII&as_sdt=0,5')
-	console.log(d)
-	let e = await a.getCitation(d.data[0].citeID)
+	// let d = await a.url(c[0].query) // 'https://scholar.google.com/scholar?q=related:0YuT_-rgrZEJ:scholar.google.com/&scioq=stress+management&hl=en&oe=ASCII&as_sdt=0,5')
+	// console.log(d)
+	let e = await a.getCitation(c.data[0].citeID)
 	console.log(e)
 }
 
