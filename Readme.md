@@ -44,7 +44,7 @@ console.log(d)
 ```
 ---
 ### Get Citations .getCitation(string agent[optional], string citeID)
-> This function is just to get some citations such as MLA, 
+> This function is just to get some citations such as MLA, APA, Chicago, Harvard, 
 
 ---
 ### License
