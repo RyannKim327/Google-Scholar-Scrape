@@ -32,7 +32,7 @@ a()
 }
 ```
 ---
-### URL .url()
+### URL .url(userAgent[optional], id)
 
 ---
 ### License
