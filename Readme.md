@@ -4,7 +4,7 @@
 | Table of Contents | |
 |---|---|
 | [Introduction](#introduction) | [Search](#search-searchstring-article) |
-| [URL](#url-urlstring-useragentoptional-string-id) | []() |
+| [URL](#url-urlstring-useragentoptional-string-id) | [Get Citation](#get-citations-getcitationstring-agentoptional-string-citeid) |
 
 ---
 ### Introduction
