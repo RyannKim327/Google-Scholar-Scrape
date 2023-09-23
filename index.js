@@ -49,7 +49,7 @@ let url =  async (agent, url) => {
 		let elem = $(e)
 		let title = elem.find("div[class='gs_or_ggsm']").find("a")
 		let citations = "" // await getCitation(agent, elem.attr()['data-cid'])
-		result.push(elem.attr()['data-cid'])
+		let cite_id = elem.attr()['data-cid'])
 		try{
 			let text_title = elem.find('.gs_rt').text()
 			let link_title = title.attr()['href']
