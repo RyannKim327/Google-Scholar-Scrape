@@ -13,8 +13,8 @@ let b = async () => {
 	console.log(c)
 	// let d = await a.url(c[0].query) // 'https://scholar.google.com/scholar?q=related:0YuT_-rgrZEJ:scholar.google.com/&scioq=stress+management&hl=en&oe=ASCII&as_sdt=0,5')
 	// console.log(d)
-	let e = await a.getCitation(c.data[0].citeID)
-	console.log(e)
+	// let e = await a.getCitation(c.data[0].citeID)
+	console.log(c.data[0])
 }
 
 b()
