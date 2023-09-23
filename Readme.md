@@ -46,8 +46,15 @@ console.log(d)
 ### Get Citations .getCitation(string agent[optional], string citeID)
 > This function is just to get some citations such as MLA, APA, Chicago, Harvard, Vancouver, and others if there's have more in the cite popup.
 
+**Sample code**
 ```Javascript
-
+const gs = require("googlescholar-scrape")
+let a = async () => {
+	let c = await gs.search('stress management')
+	console.log(c)
+  let d = await 
+}
+a()
 ```
 
 ---
