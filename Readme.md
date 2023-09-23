@@ -52,7 +52,7 @@ const gs = require("googlescholar-scrape")
 let a = async () => {
 	let c = await gs.search('stress management')
 	console.log(c)
-  let d = await 
+  let d = await gs.getCitation(c[0])
 }
 a()
 ```
