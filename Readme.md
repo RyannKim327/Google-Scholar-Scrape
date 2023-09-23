@@ -59,7 +59,7 @@ a()
 ```
 ---
 ### Other matters
-> This is not the official api for 
+> This is not the official api of google scholar not package created, it is just a webscraped package created for educational purposes. I
 
 ---
 ### License
