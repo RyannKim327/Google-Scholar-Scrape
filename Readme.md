@@ -33,7 +33,7 @@ a()
 ```
 ---
 ### URL .url(string userAgent[optional], string id)
-
+> This function sets you to insert a specific url of searched
 
 
 ---
