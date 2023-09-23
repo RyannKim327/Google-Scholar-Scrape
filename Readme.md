@@ -44,7 +44,11 @@ console.log(d)
 ```
 ---
 ### Get Citations .getCitation(string agent[optional], string citeID)
-> This function is just to get some citations such as MLA, APA, Chicago, Harvard, Vancouver, and others if there's have more 
+> This function is just to get some citations such as MLA, APA, Chicago, Harvard, Vancouver, and others if there's have more in the cite popup.
+
+```Javascript
+
+```
 
 ---
 ### License
