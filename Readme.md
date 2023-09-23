@@ -32,6 +32,9 @@ a()
 }
 ```
 ---
+### URL .url()
+
+---
 ### License
 #### The MIT License (MIT)
 ##### Copyright © 2023 Ryann Kim Sesgundo
