@@ -43,7 +43,7 @@ let d = await gs.url('https://scholar.google.com/scholar?q=related:0YuT_-rgrZEJ:
 console.log(d)
 ```
 ---
-### Get Related 
+### Get Citations .getCitation(agent, id)
 
 ---
 ### License
