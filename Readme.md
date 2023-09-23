@@ -5,7 +5,7 @@
 |---|---|
 | [Introduction](#introduction) | [Search](#search-searchstring-article) |
 | [URL](#url-urlstring-useragentoptional-string-id) | [Get Citation](#get-citations-getcitationstring-agentoptional-string-citeid) |
-| [Other matters](#other-matters) | []() |
+| [Other matters](#other-matters) | [License](#license) |
 
 ---
 ### Introduction
