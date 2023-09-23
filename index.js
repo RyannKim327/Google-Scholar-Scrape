@@ -12,9 +12,6 @@ let getCitation = async (agent, id) => {
 		id = agent
 		agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
 	}
-	if(agent == undefined){
-		agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
-	}
 	let { data } = await axios.get(`https://scholar.google.com/scholar?q=info:${id}:scholar.google.com/&output=cite&scirp=${id}&hl=en`,{
 		Headers: {
 			"User-Agents": agent
