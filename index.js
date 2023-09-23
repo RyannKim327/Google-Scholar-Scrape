@@ -8,7 +8,9 @@ const ua = async () => {
 }
 
 let getCitation = async (agent, id) => {
-	let { data } = await axios.get(`https://scholar.google.com/scholar?q=info:${id}:scholar.google.com/&output=cite`)
+	let { data } = await axios.get(`https://scholar.google.com/scholar?q=info:${id}:scholar.google.com/&output=cite`{
+		
+	})
 	let $ = cheerio.load(data)
 	let html = $("#gs_citt")
 	let base = html.find(".gs_cith")
