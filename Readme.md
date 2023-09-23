@@ -59,7 +59,7 @@ a()
 ```
 ---
 ### Other matters
-> This is not the official 
+> This is not the official api for 
 
 ---
 ### License
