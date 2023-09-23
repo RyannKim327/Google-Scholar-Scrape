@@ -9,7 +9,9 @@ const ua = async () => {
 
 let getCitation = async (agent, id) => {
 	let { data } = await axios.get(`https://scholar.google.com/scholar?q=info:${id}:scholar.google.com/&output=cite`{
-		
+		Headers: {
+			"User-Agents": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+		}
 	})
 	let $ = cheerio.load(data)
 	let html = $("#gs_citt")
