@@ -17,9 +17,9 @@
 
 **Sample code**
 ```Javascript
-const gs = 
+const gs = require("googlescholar-scrape")
 let a = async () => {
-	let c = await a.search('stress management')
+	let c = await gs.search('stress management')
 	console.log(c)
 }
 a()
