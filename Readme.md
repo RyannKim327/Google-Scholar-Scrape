@@ -3,8 +3,8 @@
 ---
 | Table of Contents | |
 |---|---|
-| [Introduction](#intro) | [Search](#search) |
-| [] | []() |
+| [Introduction](#introduction) | [Search](#search-searchstring-article) |
+| [URL](#url-urlstring-useragentoptional-string-id) | []() |
 
 ---
 ### Introduction
